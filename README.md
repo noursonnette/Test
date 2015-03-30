@@ -16,3 +16,10 @@ Pour un fichier donné (en cliquant sur son nom)
       * détails des modifications
 
 Possibilité de modifier le fichier en ligne grâce au petit crayon
+
+Pour récupérer une copie en local, ouvrir la commande et: 
+- $ git clone https://github.com/login/Test.git
+- en SSH: git@github.com:login/Test.git
+
+NB: posiionner la variable d'environnement: export https_proxy=proxy.iut_bm.univ-fcomte:3128
+
