@@ -27,3 +27,20 @@ En local:
   Test/README.md
     - .git/-config
 
+Visibilité graphique: 
+  - git k (dans la console, se mettre dans le dossier concerné et ensuite tapé gitk --all)
+
+Efficacité de git : 
+- exemple du noyau Linux: version actuelle fait 49 000 ficchiers dans 3158 répertoires et environ 648 M
+- exemple de git: depuis 2005 -> 500 000 commits, 999 M
+
+Outil en ligne de commande : git
+- usage: ~$ git commande[parametre ...]
+- aide: ~$ man ou git help
+  * ex: $man git-clone
+        $git help clone
+
+Un peu de paramétrage: 
+  $git config --global user.name "Prenom Nom"
+  $git config --global user.email "adresse@email"
+
