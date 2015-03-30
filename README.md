@@ -23,3 +23,7 @@ Pour récupérer une copie en local, ouvrir la commande et:
 
 NB: posiionner la variable d'environnement: export https_proxy=proxy.iut_bm.univ-fcomte:3128
 
+En local: 
+  Test/README.md
+    - .git/-config
+
