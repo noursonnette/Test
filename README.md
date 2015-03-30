@@ -43,4 +43,5 @@ Outil en ligne de commande : git
 Un peu de paramétrage: 
   $git config --global user.name "Prenom Nom"
   $git config --global user.email "adresse@email"
+  $git config --global color.ui auto
 
