@@ -69,4 +69,14 @@ Un peu de paramétrage:
       -> $git commit -& : fait automatiquement le "add" pour les fichiers déjà connus de git
       -> $git commit -- fichier: le fichier est ajouté pour le commit
       -> $git commit -m "Message ..."
+      
+    - Revoir les commits
+      -> $gitk : affiche le dépôt avec la liste des commits
+      -> $git log : même affichage que précédement 
+      -> $git log -p : affichage des fichiers modifiés
+      -> $git log --stat --summary : information sur les fichiers modifiés et quantité de choses modifiées sur chaque fichier       -> $git log --oneline : chaque commit est résumé sur une seule ligne
+      
+    
+      
+      
 
