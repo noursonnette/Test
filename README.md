@@ -76,5 +76,16 @@ Un peu de paramétrage:
       -> $git log -p : affichage des fichiers modifiés
       -> $git log --stat --summary : information sur les fichiers modifiés et quantité de choses modifiées sur chaque fichier       -> $git log --oneline : chaque commit est résumé sur une seule ligne
       
-    - 
+    - Envoyer / recevoir les modifications vers / depuis un serveur 
+      -> envoyer: $git push : récupère et intègre les changements
+      -> recevoir: $git pull
+                   $git fetch : récupère les changements 
+    - A quoi peuvent ressembler des "vrais" commits
+      -> en général: changements unitaires
+                     message explicatif
+    Exemple: https://git.kernel.org  -> choisir git.git -> log 
+    
+    
+    
+      
 
