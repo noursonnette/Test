@@ -50,5 +50,16 @@ Un peu de paramétrage:
       -> $git status
     - Modifier / ajouter des fichiers 
       -> $ git status
-    - 
+      -> les fichiers modifiés
+      -> les fichiers non suivis par git (ajoutés)
+    - Voir les différences 
+      -> $git diff
+    - Enregistrer les modifications (faire un commit)
+      -> Ajouter les changements à enregistrer dans l'index: $git add fichier1 fichier2 ...
+      
+    NB: $git status (pour vérifier)
+        $git diff
+        $git diff --cachcd
+      
+      -> Faire le commit (enregistrer les changements): $git commit
 
