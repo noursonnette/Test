@@ -57,13 +57,13 @@ Un peu de paramétrage:
     - Enregistrer les modifications (faire un commit)
       -> Ajouter les changements à enregistrer dans l'index: $git add fichier1 fichier2 ...
       
-    NB: $git status (pour vérifier)
+    // NB: $git status (pour vérifier)
         $git diff
         $git diff --cachcd
       
       -> Faire le commit (enregistrer les changements): $git commit
       
-    NB: $git status
+    // NB: $git status
     
     - Raccourcis
       -> $git commit -& : fait automatiquement le "add" pour les fichiers déjà connus de git
@@ -76,7 +76,5 @@ Un peu de paramétrage:
       -> $git log -p : affichage des fichiers modifiés
       -> $git log --stat --summary : information sur les fichiers modifiés et quantité de choses modifiées sur chaque fichier       -> $git log --oneline : chaque commit est résumé sur une seule ligne
       
-    
-      
-      
+    - 
 
