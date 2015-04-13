@@ -62,4 +62,11 @@ Un peu de paramétrage:
         $git diff --cachcd
       
       -> Faire le commit (enregistrer les changements): $git commit
+      
+    NB: $git status
+    
+    - Raccourcis
+      -> $git commit -& : fait automatiquement le "add" pour les fichiers déjà connus de git
+      -> $git commit -- fichier: le fichier est ajouté pour le commit
+      -> $git commit -m "Message ..."
 
