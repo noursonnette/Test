@@ -100,6 +100,30 @@ Un peu de paramétrage:
       * git stash show
       * git stash list
     
+    - Fichier ".gitignore
+      -> pour éviter d'enregistrer des données personnelles ou a risque d'être pirater, créer un fichier ".gitignore" où ser listé toute une liste des fichiers à ne pas enregistrer comme: 
+        * "~"
+        * ".back"
+        * ".o"
+        * ".class"
+        * essai.java"
+        
+    Remarque: à enregistrer dans le dépôt
     
+      -> man gitignore
+    
+    - Les branches
+      -> création: git branch experimental
+      -> lister les branches: git branch (avec à côté une "*" qui se mettra en face de la branche sur laquelle on se trouve)
+      -> changer de branche: git checkout experimental
+      
+      Ex: aditer des fichiers, enregistré (commit) -> git checkout mmaster
+          faire d'autres modificatins (+ commit)
+          git merge experimental : cela prend une branche à laquelle il intègre ls changements
+          
+      Si conflit, le merge s'arrête et les points problématiques sont indiqués. pour les voir : git diff
+      Ensuite: git commit -a
+      
+        -> supprimer une branche: git branch -d experimental
       
 
