@@ -93,6 +93,12 @@ Un peu de paramétrage:
       Remarque: en pratique, ça revient à une suppression et un ajout. on peut le constater avec: git log --summary 
                                                                                                   git log --summar -M
     
+    - Mettre du travail de côté : 
+      * git stach: met les modifications de côté (pile)
+      * git stash pop : dépile et applique les dernières modifications sauvegardées par git stash
+      * git stash drop
+      * git stash show
+      * git stash list
     
     
       
