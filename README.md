@@ -57,13 +57,13 @@ Un peu de paramétrage:
     - Enregistrer les modifications (faire un commit)
       -> Ajouter les changements à enregistrer dans l'index: $git add fichier1 fichier2 ...
       
-    => $git status (pour vérifier)
+     $git status (pour vérifier)
         $git diff
         $git diff --cachcd
       
       -> Faire le commit (enregistrer les changements): $git commit
       
-    => $git status
+     $git status
     
     - Raccourcis
       -> $git commit -& : fait automatiquement le "add" pour les fichiers déjà connus de git
