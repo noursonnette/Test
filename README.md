@@ -85,6 +85,14 @@ Un peu de paramétrage:
                      message explicatif
     Exemple: https://git.kernel.org  -> choisir git.git -> log 
     
+    - Ajout, suppression des fichiers
+      -> Ajout: git add fichiers ....
+      -> Supression: git rm fichiers ....
+      -> Renommer / Déplacer: git mv fichiers .... 
+      
+      Remarque: en pratique, ça revient à une suppression et un ajout. on peut le constater avec: git log --summary 
+                                                                                                  git log --summar -M
+    
     
     
       
