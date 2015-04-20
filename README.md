@@ -125,5 +125,7 @@ Un peu de paramétrage:
       Ensuite: git commit -a
       
         -> supprimer une branche: git branch -d experimental
-      
+       Remarque: ne fonctionne que si celle-ci à été intégrée à une autre branche sinon la commande ne s'effectuera pas. car on perd tout. 
+       
+       -> Pour forcer la suppression: gir branch -D (branche foireuse)
 
