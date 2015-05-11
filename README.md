@@ -128,4 +128,35 @@ Un peu de paramétrage:
        Remarque: ne fonctionne que si celle-ci à été intégrée à une autre branche sinon la commande ne s'effectuera pas. car on perd tout. 
        
        -> Pour forcer la suppression: gir branch -D (branche foireuse)
+    
+    - Etiqueter une version
+    
+      -> git tag nom [commit] // entre crochets, cela permet de préciser quel commit l'on souhaite utiliser
+  exemple: git tag v1.0
+  
+      -> pour lister les tags existant: git tag
+// pour les différentes manières d'identifier un commit -> man gitrevisions
 
+  - Identifier l'origine des changements 
+    -> git blame fichier
+
+  - Identifier le commit à l'origine d'un problème
+    -> git bisect // permet de dire telle version était bonne et celle-ci ne l'était pas. ensuite il sort une version qui se trouve entre les deux et vous demande si c'est bon ou non. cela jusqu'à ce qu'il trouve la version qui correspond. 
+
+  exemple: $ git bisect start // permet de commencer la recherche
+           $ git bisect bad // permet de dire que la version actuelle n'est pas bonne
+           $ git bisect good v1.52 // permet de dire que telle version est bonne
+           $ git bisect good ou bad 
+    
+    - Pour faire des commits propres (courts, unitaires, etc.)
+      => séléctionner ce qu'on ajoute pour un commit
+        -> git add -p [fichier]
+    
+    - Annuler un commit
+      -> git revert identifiant
+      
+    - Compléter le dernier commit 
+      -> ATTENTION: avant de partager avec git push par exemple
+      
+      -> git commit --amend
+      
