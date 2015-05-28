@@ -198,3 +198,8 @@ Un peu de paramétrage:
       
     - Travailler à plusieurs
       > man gittutorial "using git for collaboration"
+      
+      > ATTENTION: il faut bien fixer les droits d'accès
+          -> fichiers: lecture (r)
+          -> répertoire: lecture et exécution (r+x)
+          -> répertoires parents: exécution (x) 
