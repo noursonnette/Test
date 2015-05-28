@@ -188,3 +188,13 @@ Un peu de paramétrage:
         
         > git pull --rebase
       
+    - Créer un départ git local
+      -> git init (Dans un répertoire donné)
+      
+    - Récupérer (fiare une copie) un dépôt
+      -> git clone /chemin/vers/dépôt/
+      -> git clone ss://login@machine/chemin/vers/depot/
+      -> git pull pour récupérer les dernières modifications
+      
+    - Travailler à plusieurs
+      > man gittutorial "using git for collaboration"
