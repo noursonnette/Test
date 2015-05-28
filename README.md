@@ -159,4 +159,32 @@ Un peu de paramétrage:
       -> ATTENTION: avant de partager avec git push par exemple
       
       -> git commit --amend
+    
+    - Annuler des changements / les derniers commits
+      -> ATTENTION: A éviter si les commits ont déjà été partagés
+      -> git reset [mode] [identifiant de commit]
+      -> ATTENTION: par défaut l'identifiant de commit est HEAD
+        > réinitialise le dépôt sur le commit donné
+        > mode : --soft -> réinitialise le dépôt seulement
+                 --mixed -> réinitialise le dépôt et l'index (mode par défaut)
+                 --hard -> réinitialise tout (répertoire de transit compris)
+                 
+        > par exemple: $ git reset HEAD^^ -> supprime les deux de'rniers commits
+        > par exemple: $ git reset --hard -> réinitialise le répertoire de travail sur le dernier commit et supprime toutes les modifications
+    
+    - Avant de faire un push, on aimerait revenir sur les derniers commits (pour les compléter, en supprime, en changer l'ordre, etc.).
+        > version sur le serveur sera: origin/master 
+      -> git rebase -i origin/master
+        > -i : mode interactif -> un éditeur est lancer avec la liste des commits qui vont être appliqués
+          - pick 73a42f blablabla
+          - pick 7217cd UnAutreCOmmit
+          
+      -> si on remplace pick par switch up ou fixe up, alors les commits seront fusionnés 
+        
+        > si problème, le rebase s'arrête pour qu'on puisse le corriger (conflit par exemple) 
+        > ensuite on fait : git rebase --continue
+        > on peut aussi faire: git rebase --skip (pour ignorer le commit qui pose problème)
+        > ou ausssi: git rebase --adopt (pour annuler l'opération rebase) 
+        
+        > git pull --rebase
       
